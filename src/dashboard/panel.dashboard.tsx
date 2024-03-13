@@ -12,11 +12,15 @@ import { NodeCG } from '@nodecg/types/types/nodecg';
 type PlayerProfileJson = ToJson<PlayerProfile>;
 
 const Panel = () => {
-  const [playerProfile, setPlayerProfile] = useReplicant<PlayerProfileJson>('playerProfile');
+  const [playerProfile, setPlayerProfile] = useReplicant<PlayerProfileJson>('playerProfile', {
+    bundle: "Kirby's Quickstart",
+  });
   const [profilePicturesReplicant, setProfilePictures] = useReplicant('assets:profilePictures');
   const [loading, setLoading] = useState<boolean>(true);
 
   const profilePictures = (profilePicturesReplicant || []) as unknown as NodeCG.AssetFile[];
+
+  console.log(playerProfile, profilePicturesReplicant);
 
   const {
     register,

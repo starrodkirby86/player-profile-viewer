@@ -15,7 +15,9 @@ function numberToOrdinal(n: number): string {
 }
 
 const Index = () => {
-  const [playerProfile, setPlayerProfile] = useReplicant<PlayerProfileJson>('playerProfile');
+  const [playerProfile, setPlayerProfile] = useReplicant<PlayerProfileJson>('playerProfile', {
+    bundle: "Kirby's Quickstart",
+  });
 
   if (!playerProfile) return <div />;
 
