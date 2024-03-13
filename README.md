@@ -1,17 +1,45 @@
-# bundle-test
+# Player Profile Viewer
+This bundle displays a player's profile and biography on a browser source. It's a starter bundle demonstrating how to use NodeCG and quickstart projects of your own. It is based off [resir014's NodeCG Quickstart project](https://github.com/resir014/nodecg-react-typescript-tailwind-quickstart).
 
-bundle-test is a [NodeCG](http://github.com/nodecg/nodecg) bundle.
-It works with NodeCG versions which satisfy this [semver](https://docs.npmjs.com/getting-started/semantic-versioning) range: `^2.0.0`
-You will need to have an appropriate version of NodeCG installed to use it.
+This bundle demonstrates the following features:
+- A custom replicant with schema validation
+- Custom assets (uploading a player's profile picture)
+- Using nodecg's hook `useReplicant` to retrieve the replicant
+- Importing images, adding Google fonts, and using TailwindCSS with DaisyUI
 
+## Preview
+![Dashboard](./dashboard.png)
 
-## Developing
+![Graphics](./graphics.png)
 
-Use the following commands:
+### Prerequisites
+- Git
+- Node v18 or higher
+- nodecg >=2.0.0
+- pnpm (preferred)
 
--   `npm run build`: Build the project once.
--   `npm run watch`: Build the project and automatically rebuild on changes.
--   `npm run dev`: Build the project, automatically rebuild on changes, launch the NodeCG server, and automatically restart the NodeCG server on changes.
-    -   Only restarts the NodeCG server when server-side (i.e. extension) code changes. Changes to client-side code (i.e. dashboard panels and graphics) will not cause the server to restart, nor will they cause browser tabs to automatically refresh.
+## Getting Started
+After installing nodecg, install the bundle by cloning the repository directly in the bundles directory.
 
+```
+cd bundles
+git clone https://github.com/starrodkirby86/player-profile-viewer
+cd player-profile-viewer
+pnpm i
+```
 
+### How To Use
+In order for the bundle to be seen by NodeCG, the project must build the React components into dashboard and graphics files.
+
+```
+pnpm build
+```
+
+For development, use the `watch` command.
+```
+pnpm watch
+```
+
+## Acknowledgements
+- [**resir014's amazing quickstart repository**](https://github.com/resir014/nodecg-react-typescript-tailwind-quickstart). It was the only starters' template that I was able to rapidly develop bundles in a stack I was comfortable with.
+- **The DDR community**. For letting me develop exciting visuals and scenes to help push the competitive scene forward.

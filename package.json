@@ -1,12 +1,12 @@
 {
-  "name": "bundle-test",
-  "version": "0.0.0",
-  "description": "Starter bundle for rhythm game tournaments.",
+  "name": "player-profile-viewer",
+  "version": "1.0.0",
+  "description": "View a player's profile as a browser source. Starter bundle for rhythm game tournaments.",
   "homepage": "",
   "author": {
     "name": "Starrodkirby86",
     "email": "majestic.mudkip@gmail.com",
-    "url": ""
+    "url": "https://ongaku.io"
   },
   "files": [
     "dashboard",
@@ -15,7 +15,8 @@
     "extension"
   ],
   "keywords": [
-    "",
+    "ddr",
+    "esports",
     "nodecg-bundle"
   ],
   "nodecg": {
